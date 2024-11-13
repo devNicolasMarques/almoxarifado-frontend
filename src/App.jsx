@@ -1,10 +1,10 @@
 import { Outlet, Route, Routes } from 'react-router-dom';
-import NavBar from './components/Navbar';
+import NavBar from './components/NavBar';
 import Keys from './pages/Keys';
 import Login from './pages/Login';
 import ProtectedRoute from './pages/ProtectedRoute';
 import AccessDenied from './pages/AccessDenied';
-import Equipments from './pages/Equipments';
+// import Equipments from './pages/Equipments';
 import ClassroomLog from './pages/ClassroomLog';
 import Management from './pages/Management';
 import Teacher from './pages/Teacher'
