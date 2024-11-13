@@ -11,7 +11,7 @@ export default function LoginForm() {
 
     async function loginUser() {
         try{
-        const res = await axios.post("http://localhost:8080/api/auth/login", {
+        const res = await axios.post("https://almoxarifado-backend.onrender.com/api/auth/login", {
              email, password
         })
         sessionStorage.setItem("token", res.data.token)
