@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Bounce, toast } from "react-toastify";
 import { OrbitProgress } from 'react-loading-indicators'
+import apiInstance from "../api/axiosInstance";
 
 export default function LoginForm() {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ export default function LoginForm() {
 
   async function loginUser() {
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", {
+        const res = await apiInstance.post(`/auth/login`, {  
         email,
         password,
       });
