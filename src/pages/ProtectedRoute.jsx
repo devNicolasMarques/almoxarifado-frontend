@@ -22,6 +22,6 @@ export default function ProtectedRoute({ errorPage, targetPage }) {
     }
     useEffect(() => {
         renderPage()
-    }, [])
+    })
     return page;
 }
